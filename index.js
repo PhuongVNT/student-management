@@ -1,6 +1,6 @@
 // import data and funtion
 import { students } from "./data.js";
-import { getRank, calcAverage, addNewStudent, searchStudentByName } from "./utils.js";
+import { getRank, calcAverage, addNewStudent, searchStudentByName, updateScorByName } from "./utils.js";
 
 // 1. Add the new student
 addNewStudent(students, { name: "Phuong", age: 33, score: 10 })
@@ -22,3 +22,6 @@ console.log(`the average score students in the class is ${avg}`);
 
 // 4. Search name student
 console.log (searchStudentByName(students, "phuong"));
+
+// 5. Edit student 
+console.log(updateScorByName(students, "Phuong", 9));
