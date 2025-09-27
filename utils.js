@@ -8,4 +8,8 @@ function calcAverage(arr){
     return ((arr.reduce((sum, s) => sum + s.score, 0))/arr.length).toFixed(2);
 }
 
-export {getRank, calcAverage};
+function addNewStudent(arr, newStudent){
+    return arr.push(newStudent);
+}
+
+export {getRank, calcAverage, addNewStudent};
