@@ -16,4 +16,12 @@ function searchStudentByName(arr, name){
     return arr.filter(s => s.name.includes(name.toLowerCase()));
 }
 
-export {getRank, calcAverage, addNewStudent, searchStudentByName};
+function updateScorByName(arr, name,  score){
+    const student = arr.find(s => s.name.toLowerCase() == name.toLowerCase());
+    if(student){
+        student.score == score;
+        return `update ${name}: score ${score}`
+    } else `No find student`
+}
+
+export {getRank, calcAverage, addNewStudent, searchStudentByName, updateScorByName};
