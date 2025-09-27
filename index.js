@@ -1,6 +1,6 @@
 // import data and funtion
 import { students } from "./data.js";
-import { getRank, calcAverage, addNewStudent } from "./utils.js";
+import { getRank, calcAverage, addNewStudent, searchStudentByName } from "./utils.js";
 
 // 1. Add the new student
 addNewStudent(students, { name: "Phuong", age: 33, score: 10 })
@@ -19,3 +19,6 @@ for( let student of rankedStudents){
 // 3. Caculator the average score students
 const avg = calcAverage(students);
 console.log(`the average score students in the class is ${avg}`);
+
+// 4. Search name student
+console.log (searchStudentByName(students, "phuong"));
