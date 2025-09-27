@@ -1,9 +1,9 @@
 // import data and funtion
 import { students } from "./data.js";
-import { getRank, calcAverage, addNewStudent, searchStudentByName, updateScorByName } from "./utils.js";
+import { getRank, calcAverage, addNewStudent, searchStudentByName, updateScorByName, deleteStudentById } from "./utils.js";
 
 // 1. Add the new student
-addNewStudent(students, { name: "Phuong", age: 33, score: 10 })
+addNewStudent(students, {id: 5, name: "Phuong", age: 33, score: 10 })
 
 // 2. show the list student and rank
 
@@ -25,3 +25,6 @@ console.log (searchStudentByName(students, "phuong"));
 
 // 5. Edit student 
 console.log(updateScorByName(students, "Phuong", 9));
+
+// 6. Delete student
+console.log(deleteStudentById(students, 3));

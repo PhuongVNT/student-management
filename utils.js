@@ -24,4 +24,8 @@ function updateScorByName(arr, name,  score){
     } else `No find student`
 }
 
-export {getRank, calcAverage, addNewStudent, searchStudentByName, updateScorByName};
+function deleteStudentById(arr, id){
+    return arr.filter(s => s.id !== id)
+}
+
+export {getRank, calcAverage, addNewStudent, searchStudentByName, updateScorByName, deleteStudentById};
