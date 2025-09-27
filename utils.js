@@ -12,4 +12,8 @@ function addNewStudent(arr, newStudent){
     return arr.push(newStudent);
 }
 
-export {getRank, calcAverage, addNewStudent};
+function searchStudentByName(arr, name){
+    return arr.filter(s => s.name.includes(name.toLowerCase()));
+}
+
+export {getRank, calcAverage, addNewStudent, searchStudentByName};
